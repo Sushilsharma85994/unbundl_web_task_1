@@ -1,0 +1,83 @@
+.carsl {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carsl-in {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carsl-item {
+    flex: 0 0 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.carsl-item img {
+    width: 1600px;
+    height: 800px;
+    object-fit: cover;
+}
+
+.carsl-p,
+.carsl-n {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.carsl-p {
+    left: 0;
+}
+
+.carsl-n {
+    right: 0;
+}
+
+@media only screen and (max-width:1400px) {
+    .carsl-item img{
+        width: 1250px;
+        height: 700px;
+        object-fit: cover;
+    }
+}
+
+@media only screen and (max-width:1200px) {
+    .carsl-item img{
+        width: 1050px;
+        height: 600px;
+        object-fit: cover;
+    }
+}
+
+@media only screen and (max-width:1000px) {
+    .carsl-item img{
+        width: 850px;
+        height: 500px;
+        object-fit: cover;
+    }
+}
+
+@media only screen and (max-width:800px) {
+    .carsl-item img{
+        width: 650px;
+        height: 400px;
+        object-fit: cover;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .carsl-item img{
+        width: 450px;
+        height: 300px;
+        object-fit: cover;
+    }
+}
